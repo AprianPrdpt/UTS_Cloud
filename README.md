@@ -7,26 +7,13 @@ SaaS (Software as a Service), PaaS (Platform as a Service), dan IaaS (Infrastruc
 
 # Soal 2 - Diagram keterkaitan Cloud-Native App, Container, PaaS, dan SaaS
 
-+---------------------------------------------------+
-|               SaaS (Aplikasi Siap Pakai)          |
-| - Contoh: Google Docs, Office 365                 |
-+------------------------^--------------------------+
-                         |
-+---------------------------------------------------+
-|             PaaS (Platform Pengembangan)          |
-| - Mendukung deployment berbasis container         |
-| - Contoh: Heroku, Google App Engine               |
-+------------------------^--------------------------+
-                         |
-+---------------------------------------------------+
-|        Cloud Native App <-> Teknologi Container   |
-| - Docker, Kubernetes, Microservice Architectures  |
-+------------------------^--------------------------+
-                         |
-+---------------------------------------------------+
-|           IaaS (Infrastruktur Virtualisasi)       |
-| - Komputasi, Penyimpanan, Jaringan                |
-+---------------------------------------------------+
-
+```
+flowchart TB
+    IaaS["IaaS (Infrastruktur Virtualisasi)<br/><br/>- Komputasi, Penyimpanan, Jaringan"]
+      --> PaaS["PaaS (Platform Pengembangan)<br/><br/>- Mendukung deployment container<br/>- Contoh: Heroku, Google App Engine"]
+    PaaS --> CNA["Cloud Native App / Teknologi Container<br/><br/>- Docker, Kubernetes, Microservice Architectures"]
+    CNA --> SaaS["SaaS (Aplikasi Siap Pakai)<br/><br/>- Contoh: Google Docs, Office 365"]
+    PaaS --> SaaS
+```
 
 
