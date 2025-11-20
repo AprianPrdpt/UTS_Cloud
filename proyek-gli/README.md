@@ -11,7 +11,7 @@ AsyncIO time: 1.8975837230682373
 Waktu tersebut menunjukkan total durasi eksekusi concurrent fetch menggunakan pendekatan asynchronous.
 
 
-### 🔹 2. Hasil Output `multi_fetch.py`
+# 2. Hasil Output `multi_fetch.py`
 Program ini menguji pengambilan data menggunakan **multiprocessing** untuk menjalankan beberapa proses secara paralel.
 
 **Output:**
